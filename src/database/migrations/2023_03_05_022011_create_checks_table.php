@@ -15,6 +15,7 @@ class CreateChecksTable extends Migration
     {
         Schema::create('checks', function (Blueprint $table) {
             $table->id();
+            $table->string('check_name');
             $table->timestamps();
         });
     }
